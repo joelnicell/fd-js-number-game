@@ -14,7 +14,7 @@ function getPlayerGuess(
   const userPrompt = prompt(message);
 
   if (userPrompt === null) {
-    alert("You cancelled the game.");
+    alert("You cancelled the game.\n\nRefresh the page to play 👾");
     return;
   }
 
@@ -89,9 +89,6 @@ function game() {
       );
     }
   } while (ATTEMPTS_NUMBER < MAX_ATTEMPTS);
-
-  console.log("attempts: ", ATTEMPTS_NUMBER);
-  console.log("number: ", randomNumber);
 }
 
 function generateAttemptsMessage(attempts) {
@@ -112,5 +109,7 @@ function generateAttemptsMessage(attempts) {
       return "";
   }
 }
+
+alert(`Welcome to Number Guesser!\n\nAn Evil AI has taken over your webpage and requires you to guess a number betwen ${USER_NUMBER_MIN_LIMIT} - ${USER_NUMBER_MAX_LIMIT} or it will destroy the Earth!! 🌋\n\nyou have ${MAX_ATTEMPTS} attempts, or else the world is lost!\n\nEnter your whole number in the prompts to play once you close this message.\n\nGood luck web warrior... 🫡`);
 
 game();
