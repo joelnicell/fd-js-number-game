@@ -24,7 +24,7 @@ function getPlayerGuess(
   const userNumber = Number(userPrompt);
 
   if (isNaN(userNumber)) {
-    alert("Please enter a valid number");
+    alert("Please enter a valid number. You're at the edge anyway...");
     return getPlayerGuess();
   } else if (
     userNumber < USER_NUMBER_MIN_LIMIT ||
