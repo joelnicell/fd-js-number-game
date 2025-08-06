@@ -14,10 +14,7 @@ function getPlayerGuess(
   const userPrompt = prompt(message);
 
   if (userPrompt === null) {
-    alert("You cancelled the game.\n\n
-          The AI is... displeased. ☠️\n\n
-          It waits, watching, lurking in the code.\n\n
-          Refresh the page to play 👾");
+    alert("You cancelled the game. The AI is... displeased. ☠️ It waits, watching, lurking in the code.\n\nRefresh the page to play 👾");
     return;
   }
 
