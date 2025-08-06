@@ -110,13 +110,6 @@ function generateAttemptsMessage(attempts) {
   }
 }
 
-alert(`Welcome to Number Guesser!\n\n
-        An Evil AI has taken over your webpage and requires you to guess a number betwen ${USER_NUMBER_MIN_LIMIT} - ${USER_NUMBER_MAX_LIMIT} or it will destroy the Earth!! 🌋\n\n
-        You have ${MAX_ATTEMPTS} attempts, or else the world is lost!\n\n
-        ☠️ But heed this warning...
-        Each incorrect guess feeds the AI's wrath. With every failure, its grip on the digital world tightens. It has erased civilizations before. It will not hesitate to do it again.\n\n
-        Type wisely... or perish with the rest.\n\n
-        Enter your whole number in the prompts to play once you close this message.\n\n
-        Good luck web warrior... 🫡`);
+alert(`Welcome to Number Guesser!\n\nAn Evil AI has taken over your webpage and requires you to guess a number betwen ${USER_NUMBER_MIN_LIMIT} - ${USER_NUMBER_MAX_LIMIT} or it will destroy the Earth!! 🌋\n\nYou have ${MAX_ATTEMPTS} attempts, or else the world is lost!\n\n☠️ But heed this warning...Each incorrect guess feeds the AI's wrath. With every failure, its grip on the digital world tightens. It has erased civilizations before. It will not hesitate to do it again.\n\nType wisely... or perish with the rest.\n\nEnter your whole number in the prompts to play once you close this message.\n\nGood luck web warrior... 🫡`);
 
 game();
